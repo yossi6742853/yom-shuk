@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>יום שוק | קייטרינג בטעם ביתי לארוע שלא ישכח</title>
-<meta name="description" content="יום שוק - קייטרינג בטעם ביתי לאירועים, שולחנות שוק, חבילות לכבוד צ'אבעס. שירות מלא חלבי ובשרי באזור גוש עציון ומעלה עמוס.">
-<meta name="theme-color" content="#8B2635">
+<title>יום שוק | חויה של טעמים</title>
+<meta name="description" content="יום שוק — חויה של טעמים. קייטרינג בטעם ביתי, שולחנות שוק, חבילות לכבוד צ'אבעס באזור גוש עציון ומעלה עמוס.">
+<meta name="theme-color" content="#AD1F27">
+<link rel="icon" type="image/png" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Suez+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,22 +18,18 @@
 <header class="topbar" id="topbar">
   <div class="container nav-wrap">
     <a href="#hero" class="brand">
-      <span class="brand-mark"><i class="bi bi-basket3-fill"></i></span>
-      <span class="brand-text">
-        <span class="brand-name">יום שוק</span>
-        <span class="brand-tag">קייטרינג בטעם ביתי</span>
-      </span>
+      <img src="images/logo.png" alt="יום שוק" class="brand-logo">
     </a>
     <nav class="main-nav">
       <a href="#about">עלינו</a>
       <a href="#services">שירותים</a>
       <a href="#packages">חבילות</a>
-      <a href="#shulchan">שולחן שוק</a>
       <a href="#gallery">גלריה</a>
+      <a href="#values">הערכים שלנו</a>
       <a href="#contact">צור קשר</a>
     </nav>
     <a href="https://wa.me/972533177636" class="cta-btn d-none-mobile" target="_blank" rel="noopener">
-      <i class="bi bi-whatsapp"></i> הזמנה בוואטסאפ
+      <i class="bi bi-whatsapp"></i> הזמינו עכשיו
     </a>
     <button class="menu-toggle" aria-label="תפריט" id="menuToggle">
       <i class="bi bi-list"></i>
@@ -42,29 +39,32 @@
     <a href="#about">עלינו</a>
     <a href="#services">שירותים</a>
     <a href="#packages">חבילות</a>
-    <a href="#shulchan">שולחן שוק</a>
     <a href="#gallery">גלריה</a>
+    <a href="#values">הערכים שלנו</a>
     <a href="#contact">צור קשר</a>
-    <a href="https://wa.me/972533177636" class="cta-btn" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> הזמנה בוואטסאפ</a>
+    <a href="https://wa.me/972533177636" class="cta-btn" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> הזמינו עכשיו</a>
   </div>
 </header>
 
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-pattern"></div>
+  <div class="hero-bg-shapes">
+    <span class="shape s1"></span>
+    <span class="shape s2"></span>
+    <span class="shape s3"></span>
+    <span class="shape s4"></span>
+    <span class="shape s5"></span>
+    <span class="shape s6"></span>
+  </div>
   <div class="container hero-content">
-    <div class="hero-badge"><i class="bi bi-stars"></i> גוש עציון | מעלה עמוס</div>
+    <img src="images/logo.png" alt="יום שוק" class="hero-logo">
+    <div class="hero-tagline">חויה של טעמים</div>
     <h1 class="hero-title">
-      טעם ביתי <span class="accent">בלב האירוע</span>
+      שפע. <span class="c-red">חויה.</span> <span class="c-orange">צבע.</span>
     </h1>
     <p class="hero-sub">
-      שולחנות שוק, חבילות לכבוד צ'אבעס וקייטרינג מלא — חלבי ובשרי.<br>
-      הכל מוכן, מעוצב וטעים, עד דלת ביתכם.
+      טריות חיה, עיצוב שובה עין ושירות אישי ברמה הגבוהה ביותר —<br>
+      כל אירוע, בטעם שלכם.
     </p>
-    <div class="hero-motto">
-      <i class="bi bi-quote"></i>
-      הכל בשביל שהלקוח יהיה מרוצה
-    </div>
     <div class="hero-cta">
       <a href="https://wa.me/972533177636?text=שלום%20אני%20מעוניין%20בהצעת%20מחיר" class="btn-primary" target="_blank" rel="noopener">
         <i class="bi bi-whatsapp"></i> להצעת מחיר
@@ -73,62 +73,48 @@
         <i class="bi bi-telephone-fill"></i> 053-3177636
       </a>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">טעם ביתי</div></div>
-      <div class="stat"><div class="stat-num">3</div><div class="stat-label">סוגי קייטרינג</div></div>
-      <div class="stat"><div class="stat-num">חינם</div><div class="stat-label">משלוח לאזור</div></div>
+    <div class="hero-promo">
+      <i class="bi bi-gift-fill"></i>
+      <strong>10% הנחה</strong> בהזמנה ראשונה ללקוח חדש!
     </div>
   </div>
-  <div class="scroll-hint"><i class="bi bi-mouse"></i> גוללו למטה</div>
 </section>
 
 <section class="strip">
   <div class="container strip-grid">
     <div class="strip-item"><i class="bi bi-truck"></i><span>משלוחים לכל הגוש</span></div>
-    <div class="strip-item"><i class="bi bi-stars"></i><span>חומרי גלם איכותיים</span></div>
-    <div class="strip-item"><i class="bi bi-shield-check"></i><span>תחת השגחה</span></div>
-    <div class="strip-item"><i class="bi bi-emoji-smile"></i><span>שירות אישי וחם</span></div>
+    <div class="strip-item"><i class="bi bi-stars"></i><span>טריות חיה</span></div>
+    <div class="strip-item"><i class="bi bi-palette-fill"></i><span>עיצוב מטורף</span></div>
+    <div class="strip-item"><i class="bi bi-emoji-heart-eyes-fill"></i><span>שירות מעל הכל</span></div>
   </div>
 </section>
 
 <section class="section about" id="about">
   <div class="container">
-    <div class="section-head">
-      <span class="section-eyebrow">עלינו</span>
-      <h2>מטעם ביתי לאירוע שלא ישכח</h2>
-    </div>
     <div class="about-grid">
       <div class="about-text">
+        <span class="section-eyebrow c-red-bg">עלינו</span>
+        <h2>אנחנו מייצרים חויה</h2>
         <p>
-          <strong>יום שוק</strong> הוא קייטרינג בטעם ביתי לאירועים שלא נשכחים.
-          מתחילתו של כל מנה, ועד עיצוב שולחן שלם — הכל בעבודת יד, באהבה ובהקפדה.
-        </p>
-        <p>
-          לאחר תקופה ארוכה כחנות בוטיק בישוב, אנו מתמקדים כעת
-          ב<strong>הזמנות גדולות מראש</strong> ובחבילות מותאמות:
-          קייטרינג חלבי, קייטרינג בשרי, שולחנות שוק לאירועים,
-          וחבילות מיוחדות לכבוד צ'אבעס (שלום זכר).
+          <strong>יום שוק</strong> הוא לא קייטרינג רגיל. כל שולחן, כל ניחוח, כל חיוך מהצוות —
+          הם חלק ממופע של אנרגיה טובה, שמחה ואירוח חם.
+          <strong>המטרה היא שהאורחים ירגישו שהם באירוע מיוחד באמת</strong> — לא משהו שדומה לקודמו.
         </p>
         <p class="signature">
-          הכל בשביל שהלקוח יהיה מרוצה — לא סיסמה, אלא דרך עבודה.
+          חויה מותאמת אישית שמשאירה טעם של עוד.
         </p>
         <div class="about-pills">
-          <span class="pill"><i class="bi bi-check2-circle"></i> חומרי גלם טריים</span>
-          <span class="pill"><i class="bi bi-check2-circle"></i> עיצוב מקצועי</span>
-          <span class="pill"><i class="bi bi-check2-circle"></i> בקרת איכות</span>
-          <span class="pill"><i class="bi bi-check2-circle"></i> משלוח עד הבית</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> טריות חיה</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> שפע נדיב</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> אסתטיקה</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> שקיפות</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> שירות אישי</span>
+          <span class="pill"><i class="bi bi-check2-circle"></i> טעם ביתי</span>
         </div>
       </div>
-      <div class="about-card">
-        <div class="card-emoji">🍽️</div>
-        <h3>למי אנחנו מתאימים?</h3>
-        <ul>
-          <li><i class="bi bi-dot"></i> משפחות שעורכות אירוע וצריכות פתרון מלא</li>
-          <li><i class="bi bi-dot"></i> בתי כנסת המארגנים קידושים</li>
-          <li><i class="bi bi-dot"></i> מארגני אירועים קהילתיים</li>
-          <li><i class="bi bi-dot"></i> שמחות בית — שלום זכר, ברית, בר מצווה</li>
-          <li><i class="bi bi-dot"></i> שבתות חתן וקבוצות מצומצמות</li>
-        </ul>
+      <div class="about-image">
+        <img src="images/01_shulchan_salads.jpg" alt="שולחן שוק עשיר">
+        <div class="image-tag">שולחן שוק | אירוע פרטי</div>
       </div>
     </div>
   </div>
@@ -137,42 +123,40 @@
 <section class="section services" id="services">
   <div class="container">
     <div class="section-head">
-      <span class="section-eyebrow">שירותים</span>
+      <span class="section-eyebrow c-orange-bg">שירותים</span>
       <h2>מה אנחנו מציעים</h2>
-      <p class="section-lead">שלושה עולמות, איכות אחת — טעם ביתי שעוטף את האירוע שלכם.</p>
+      <p class="section-lead">שלושה עולמות, איכות אחת — חויה של טעמים שעוטפת את האירוע שלכם.</p>
     </div>
     <div class="services-grid">
       <article class="svc-card">
-        <div class="svc-icon"><i class="bi bi-egg-fried"></i></div>
-        <h3>קייטרינג חלבי</h3>
-        <p>קישים, סלטים, מאפים, גבינות בוטיק, פסטות, קינוחים — מבחר רחב לקבלת פנים, ארוחות וערבי גיבוש.</p>
-        <ul class="svc-list">
-          <li>מאפים מתפיחה ביתית</li>
-          <li>סלטים טריים מן השוק</li>
-          <li>קינוחי גבינה ופירות</li>
-        </ul>
+        <div class="svc-icon" style="background:linear-gradient(135deg,#5B5FAA,#3a3e85)"><i class="bi bi-egg-fried"></i></div>
+        <h3>אירועים חלביים</h3>
+        <div class="svc-price">החל מ-<span>100 ₪</span> למנה</div>
+        <p>קישים, סלטים, מאפים, גבינות בוטיק, פסטות, קינוחים — מבחר רחב לקבלות פנים, ארוחות וגיבושים.</p>
+        <div class="svc-foot">מינימום 30 מנות</div>
       </article>
       <article class="svc-card highlight">
-        <div class="ribbon">פופולרי</div>
-        <div class="svc-icon"><i class="bi bi-fire"></i></div>
-        <h3>קייטרינג בשרי</h3>
-        <p>מנות עיקריות חמות, צלייה, אורגינל ירושלמי, מטבח ים תיכוני — מותאם לכל גודל אירוע.</p>
-        <ul class="svc-list">
-          <li>מנות חמות ישר מהתנור</li>
-          <li>תבשילי שבת ופתיחות לשולחן</li>
-          <li>סלטים ותוספות בעבודת יד</li>
-        </ul>
+        <div class="ribbon">הדגל שלנו</div>
+        <div class="svc-icon" style="background:linear-gradient(135deg,#AD1F27,#D02928)"><i class="bi bi-basket3-fill"></i></div>
+        <h3>שולחנות שוק</h3>
+        <div class="svc-price">החל מ-<span>200 ₪</span> למנה</div>
+        <p>חויה ויזואלית עוטפת — סלים, פירות חתוכים, מגשי פיצוחים, יין ופופקורן בעיצוב צבעוני וחם.</p>
+        <div class="svc-foot">מינימום 30 מנות</div>
       </article>
       <article class="svc-card">
-        <div class="svc-icon"><i class="bi bi-basket-fill"></i></div>
-        <h3>שולחנות שוק</h3>
-        <p>חוויית עיצוב — סלים, פירות חתוכים, מגשי פיצוחים, יין ופופקורן בעיצוב דומיננטי וחם.</p>
-        <ul class="svc-list">
-          <li>עיצוב מותאם לאירוע</li>
-          <li>מגשים, סלסילות, שילוט</li>
-          <li>הקמה במקום</li>
-        </ul>
+        <div class="svc-icon" style="background:linear-gradient(135deg,#179549,#6BC393)"><i class="bi bi-cake2-fill"></i></div>
+        <h3>אירועי בוטיק</h3>
+        <div class="svc-price">החל מ-<span>100 ₪</span> למנה</div>
+        <p>חבילות ייחודיות לאירועים אינטימיים — שלום זכר, ברית, בת מצווה ושבתות חתן.</p>
+        <div class="svc-foot">החל מ-10 מנות</div>
       </article>
+    </div>
+    <div class="services-extra">
+      <div class="extra-icon"><i class="bi bi-stars"></i></div>
+      <div class="extra-text">
+        <strong>אופציה לשירות מלא!</strong>
+        מפות, כלים, סידור והגשה — הכל עלינו. אפס כאב ראש, בלי התעסקות.
+      </div>
     </div>
   </div>
 </section>
@@ -180,20 +164,20 @@
 <section class="section packages" id="packages">
   <div class="container">
     <div class="section-head">
-      <span class="section-eyebrow">חבילות לכבוד צ'אבעס</span>
+      <span class="section-eyebrow c-burgundy-bg">חבילות לכבוד צ'אבעס</span>
       <h2>חבילות שלום זכר מוכנות לשולחן</h2>
       <p class="section-lead">פתרון כולל לערב שישי — חבילה מעוצבת, טרייה, מוכנה להגשה. לכ-50 איש.</p>
     </div>
     <div class="pkg-grid">
       <article class="pkg-card">
-        <div class="pkg-head">
+        <div class="pkg-head" style="background:linear-gradient(135deg,#F89A32,#E7CE38)">
           <h3>קלאסיק</h3>
           <div class="pkg-price"><span class="cur">₪</span>500</div>
-          <div class="pkg-sub">כניסה לעולם הצ'אבעס</div>
+          <div class="pkg-sub">המינימום הנדרש ברמה מקסימלית</div>
         </div>
         <ul class="pkg-list">
-          <li><i class="bi bi-check2"></i> ארבעס ביתי 1.5 ק"ג חם ומתובל</li>
-          <li><i class="bi bi-check2"></i> 2 מגשי פיצוחים ומתוקים (7 תאים)</li>
+          <li><i class="bi bi-check2-circle"></i> ארבעס ביתי 1.5 ק"ג חם ומתובל</li>
+          <li><i class="bi bi-check2-circle"></i> 2 מגשי פיצוחים בוטיק (7 תאים)</li>
           <li><i class="bi bi-check2-circle"></i> 2 מארזי קינוחים (~24 יח')</li>
           <li><i class="bi bi-check2-circle"></i> 2 שקיות פופקורן ענק</li>
           <li><i class="bi bi-check2-circle"></i> אריזה מוכנה לשולחן</li>
@@ -203,7 +187,7 @@
 
       <article class="pkg-card popular">
         <div class="pkg-tag">הכי משתלם</div>
-        <div class="pkg-head">
+        <div class="pkg-head" style="background:linear-gradient(135deg,#AD1F27,#D02928)">
           <h3>פרימיום</h3>
           <div class="pkg-price"><span class="cur">₪</span>1,000</div>
           <div class="pkg-sub">פתרון מלא לאירוח מושלם</div>
@@ -222,7 +206,7 @@
       </article>
 
       <article class="pkg-card">
-        <div class="pkg-head">
+        <div class="pkg-head" style="background:linear-gradient(135deg,#5B5FAA,#936E2A)">
           <h3>VIP</h3>
           <div class="pkg-price"><span class="cur">₪</span>2,000</div>
           <div class="pkg-sub">חוויית אירוח יוקרתית</div>
@@ -251,74 +235,127 @@
   </div>
 </section>
 
-<section class="section shulchan" id="shulchan">
+<section class="section gallery" id="gallery">
   <div class="container">
-    <div class="shulchan-grid">
-      <div class="shulchan-text">
-        <span class="section-eyebrow">שולחן שוק</span>
-        <h2>חוויה ויזואלית עוטפת</h2>
-        <p>
-          שולחן שוק הוא יותר משולחן — זו זירה של צבעים, ניחוחות וטעמים שמייצרת אווירה ייחודית באירוע.
-          סלים, ארגזים מעוצבים, מגשי פירות חתוכים, קינוחים מקסימים, פיצוחים ויינות — הכל באיזון מדויק.
-        </p>
-        <ul class="shulchan-list">
-          <li><i class="bi bi-check-circle-fill"></i> תכנון ועיצוב מותאם לאירוע</li>
-          <li><i class="bi bi-check-circle-fill"></i> חומרי גלם טריים מהשוק</li>
-          <li><i class="bi bi-check-circle-fill"></i> הקמה במקום ופירוק לאחר האירוע</li>
-          <li><i class="bi bi-check-circle-fill"></i> עוצמה ויזואלית, ערכים נוטריציוניים, חוויית טעם</li>
-        </ul>
-        <a href="https://wa.me/972533177636?text=שלום%20מעוניין%20בשולחן%20שוק" class="btn-primary" target="_blank" rel="noopener">
-          <i class="bi bi-whatsapp"></i> בקשת הצעה לשולחן
-        </a>
+    <div class="section-head">
+      <span class="section-eyebrow c-green-bg">גלריה</span>
+      <h2>רגעים מהאירועים שלנו</h2>
+      <p class="section-lead">כי תמונה אחת שווה אלף טעמים.</p>
+    </div>
+    <div class="gallery-grid">
+      <a href="images/01_shulchan_salads.jpg" class="gal-tile big" target="_blank">
+        <img src="images/01_shulchan_salads.jpg" alt="שולחן סלטים — לכבוד צ'אבעס" loading="lazy">
+        <div class="gal-overlay"><span>שולחן סלטים</span></div>
+      </a>
+      <a href="images/02_shulchan_dessert.jpg" class="gal-tile" target="_blank">
+        <img src="images/02_shulchan_dessert.jpg" alt="שולחן קינוחים מעוצב" loading="lazy">
+        <div class="gal-overlay"><span>שולחן קינוחים</span></div>
+      </a>
+      <a href="images/03_fruit_brit.jpg" class="gal-tile" target="_blank">
+        <img src="images/03_fruit_brit.jpg" alt="מגש פירות — ברית חיים" loading="lazy">
+        <div class="gal-overlay"><span>מגש פירות</span></div>
+      </a>
+      <a href="images/04_fruit_design.jpg" class="gal-tile" target="_blank">
+        <img src="images/04_fruit_design.jpg" alt="עיצוב פירות" loading="lazy">
+        <div class="gal-overlay"><span>עיצוב פירות</span></div>
+      </a>
+      <a href="images/05_bat_mitzvah.jpg" class="gal-tile big" target="_blank">
+        <img src="images/05_bat_mitzvah.jpg" alt="בת מצווה" loading="lazy">
+        <div class="gal-overlay"><span>בת מצווה</span></div>
+      </a>
+      <a href="images/06_brit_marmor.jpg" class="gal-tile" target="_blank">
+        <img src="images/06_brit_marmor.jpg" alt="אירוע ברית" loading="lazy">
+        <div class="gal-overlay"><span>אירוע ברית</span></div>
+      </a>
+      <a href="images/07_brit_buffet.jpg" class="gal-tile" target="_blank">
+        <img src="images/07_brit_buffet.jpg" alt="שולחן ברית" loading="lazy">
+        <div class="gal-overlay"><span>שולחן ברית</span></div>
+      </a>
+      <a href="images/08_bat_mitzvah_table.jpg" class="gal-tile" target="_blank">
+        <img src="images/08_bat_mitzvah_table.jpg" alt="שולחן בת מצווה" loading="lazy">
+        <div class="gal-overlay"><span>בת מצווה</span></div>
+      </a>
+      <a href="images/09_birthday.jpg" class="gal-tile" target="_blank">
+        <img src="images/09_birthday.jpg" alt="אירוע יום הולדת" loading="lazy">
+        <div class="gal-overlay"><span>יום הולדת</span></div>
+      </a>
+      <a href="images/10_shulchan_full.jpg" class="gal-tile big" target="_blank">
+        <img src="images/10_shulchan_full.jpg" alt="שולחן שוק עשיר" loading="lazy">
+        <div class="gal-overlay"><span>שולחן שוק</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section values" id="values">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow c-purple-bg">ערכי המותג</span>
+      <h2>ה-DNA של יום שוק</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" style="--c:#AD1F27">
+        <div class="v-icon"><i class="bi bi-fire"></i></div>
+        <h4>טריות</h4>
+        <p>אצלנו לא מגיעים עם אוכל מוכן. הכל נחתך, נצלה, נמרח ומוגש ברגע האחרון.</p>
       </div>
-      <div class="shulchan-visual">
-        <div class="visual-tile t1"><i class="bi bi-apple"></i></div>
-        <div class="visual-tile t2"><i class="bi bi-cup-hot-fill"></i></div>
-        <div class="visual-tile t3"><i class="bi bi-flower2"></i></div>
-        <div class="visual-tile t4"><i class="bi bi-cookie"></i></div>
-        <div class="visual-tile t5"><i class="bi bi-egg"></i></div>
-        <div class="visual-tile t6"><i class="bi bi-cake2-fill"></i></div>
+      <div class="value-card" style="--c:#F89A32">
+        <div class="v-icon"><i class="bi bi-balloon-heart-fill"></i></div>
+        <h4>שפע</h4>
+        <p>שולחן שופע — בכמות, באפשרויות, בצבעים ובפרזנטציה. תחושת חגיגה אמיתית.</p>
+      </div>
+      <div class="value-card" style="--c:#179549">
+        <div class="v-icon"><i class="bi bi-emoji-laughing-fill"></i></div>
+        <h4>חויה ואנרגיה</h4>
+        <p>אנרגיה טובה, שמחה ואירוח חם — אירוע מיוחד באמת, לא משהו שדומה לקודמו.</p>
+      </div>
+      <div class="value-card" style="--c:#5B5FAA">
+        <div class="v-icon"><i class="bi bi-people-fill"></i></div>
+        <h4>גובה עיניים</h4>
+        <p>הלקוחות שלנו הם שותפים. בפשטות, בנעימות, בכבוד הדדי — בלי יומרות מיותרות.</p>
+      </div>
+      <div class="value-card" style="--c:#D02928">
+        <div class="v-icon"><i class="bi bi-palette-fill"></i></div>
+        <h4>אסתטיקה</h4>
+        <p>עיצוב מטורף, צבעוניות מעניינת ושמחה — חויה ויזואלית שעוטפת את האירוע.</p>
+      </div>
+      <div class="value-card" style="--c:#D5A536">
+        <div class="v-icon"><i class="bi bi-shield-check"></i></div>
+        <h4>הוגנות ושקיפות</h4>
+        <p>שירות מעל הכל, יחס חם ואנושי. הכל גלוי, בלי הפתעות.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section gallery" id="gallery">
+<section class="section how">
   <div class="container">
     <div class="section-head">
-      <span class="section-eyebrow">גלריה</span>
-      <h2>רגעים מהאירועים שלנו</h2>
+      <span class="section-eyebrow c-yellow-bg">תהליך עבודה</span>
+      <h2>כל כך פשוט לחגוג איתנו</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="gal-tile" style="background: linear-gradient(135deg, #d97757, #8b2635);">
-        <i class="bi bi-basket3-fill"></i>
-        <span>שולחנות שוק</span>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num" style="background:linear-gradient(135deg,#F89A32,#D02928)">1</div>
+        <h4>מזמינים</h4>
+        <p>שריינו את החבילה שלכם בשיחת טלפון קצרה או בוואטסאפ.</p>
       </div>
-      <div class="gal-tile" style="background: linear-gradient(135deg, #c4a47c, #6b4423);">
-        <i class="bi bi-cake-fill"></i>
-        <span>קינוחים</span>
+      <div class="how-step">
+        <div class="how-num" style="background:linear-gradient(135deg,#D02928,#AD1F27)">2</div>
+        <h4>מתאמים</h4>
+        <p>סגירת תפריט, כמויות ומועד. הזמנה עד יום חמישי 12:00.</p>
       </div>
-      <div class="gal-tile" style="background: linear-gradient(135deg, #8b2635, #3d1419);">
-        <i class="bi bi-cup-straw"></i>
-        <span>שתייה</span>
+      <div class="how-step">
+        <div class="how-num" style="background:linear-gradient(135deg,#AD1F27,#5B5FAA)">3</div>
+        <h4>מכינים</h4>
+        <p>אנחנו דואגים לכל הפרטים — מהבישול והאפייה ועד האריזה המוקפדת.</p>
       </div>
-      <div class="gal-tile" style="background: linear-gradient(135deg, #d97757, #c44a26);">
-        <i class="bi bi-egg-fried"></i>
-        <span>קייטרינג חלבי</span>
-      </div>
-      <div class="gal-tile" style="background: linear-gradient(135deg, #6b4423, #3d1419);">
-        <i class="bi bi-fire"></i>
-        <span>קייטרינג בשרי</span>
-      </div>
-      <div class="gal-tile" style="background: linear-gradient(135deg, #c4a47c, #d97757);">
-        <i class="bi bi-flower1"></i>
-        <span>עיצוב אירועים</span>
+      <div class="how-step">
+        <div class="how-num" style="background:linear-gradient(135deg,#5B5FAA,#179549)">4</div>
+        <h4>נהנים</h4>
+        <p>החבילה המפנקת מגיעה אליכם בצהרי יום שישי, טרייה ומוכנה לחגיגה.</p>
       </div>
     </div>
-    <p class="gallery-note">
-      <i class="bi bi-camera"></i>
-      רוצים לראות עוד? בקשו מאיתנו דוגמאות מהאלבום הפרטי לאירוע מסוג שלכם.
-    </p>
   </div>
 </section>
 
@@ -331,37 +368,6 @@
         הן באיכות, הן בעיצוב, והן בטעם.
       </p>
       <div class="quote-by">— אילה שניידר, יום שוק</div>
-    </div>
-  </div>
-</section>
-
-<section class="section how">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-eyebrow">תהליך עבודה</span>
-      <h2>איך מזמינים?</h2>
-    </div>
-    <div class="how-grid">
-      <div class="how-step">
-        <div class="how-num">1</div>
-        <h4>שיחת ייעוץ</h4>
-        <p>מתקשרים, מספרים על האירוע, ואנחנו בונים יחד הצעה מותאמת.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">2</div>
-        <h4>תיאום סופי</h4>
-        <p>סגירת תפריט, כמויות ומועד. הזמנה עד יום חמישי 12:00.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">3</div>
-        <h4>הכנה טרייה</h4>
-        <p>אריזה ועיצוב ביום חמישי. בישול וחיתוך טרי בבוקר יום שישי.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">4</div>
-        <h4>משלוח עד הבית</h4>
-        <p>המשלוחים יוצאים בצהרי שישי, מוכנים להגשה — בלי הפתעות.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -400,7 +406,7 @@
             <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
             <div>
               <div class="ci-label">אזור פעילות</div>
-              <div class="ci-val">מעלה עמוס וגוש עציון</div>
+              <div class="ci-val">מעלה עמוס וכל גוש עציון</div>
             </div>
           </div>
         </div>
@@ -433,9 +439,13 @@
             <option value="">בחרו…</option>
             <option>שלום זכר / לכבוד צ'אבעס</option>
             <option>שולחן שוק</option>
-            <option>קייטרינג חלבי</option>
-            <option>קייטרינג בשרי</option>
+            <option>אירוע חלבי</option>
+            <option>אירוע בשרי</option>
+            <option>בת מצווה</option>
+            <option>ברית</option>
+            <option>שבת חתן</option>
             <option>קידוש בית כנסת</option>
+            <option>אסיפת צוות / יום גיבוש</option>
             <option>אחר</option>
           </select>
         </label>
@@ -465,25 +475,26 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div class="foot-brand">
-      <div class="brand-mark"><i class="bi bi-basket3-fill"></i></div>
+      <img src="images/logo.png" alt="יום שוק" class="foot-logo">
       <div>
-        <div class="foot-name">יום שוק</div>
-        <div class="foot-tag">קייטרינג בטעם ביתי</div>
+        <div class="foot-tag">חויה של טעמים</div>
+        <div class="foot-area">גוש עציון | מעלה עמוס</div>
       </div>
     </div>
     <div class="foot-cols">
       <div>
         <h5>שירותים</h5>
-        <a href="#services">קייטרינג חלבי</a>
-        <a href="#services">קייטרינג בשרי</a>
-        <a href="#shulchan">שולחנות שוק</a>
+        <a href="#services">אירועים חלביים</a>
+        <a href="#services">שולחנות שוק</a>
         <a href="#packages">חבילות צ'אבעס</a>
+        <a href="#services">אירועי בוטיק</a>
       </div>
       <div>
         <h5>קישורים</h5>
         <a href="#about">עלינו</a>
         <a href="#packages">חבילות</a>
         <a href="#gallery">גלריה</a>
+        <a href="#values">הערכים שלנו</a>
         <a href="#contact">צור קשר</a>
       </div>
       <div>
@@ -495,7 +506,7 @@
     </div>
   </div>
   <div class="foot-bottom">
-    © כל הזכויות שמורות ל<strong>יום שוק</strong> · בעיצוב והפקת אתר: שניידר הפקות
+    © כל הזכויות שמורות ל<strong>יום שוק</strong> · מיתוג: סטודיו אוריה · אתר: שניידר הפקות
   </div>
 </footer>
 
